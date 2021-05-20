@@ -1,0 +1,20 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "shub1234",
+  "database": "postgres",
+  "synchronize": false,
+  "logging": true,
+  "entities": ["server/models/**/*.ts"],
+  "factories": ["server/factories/**/*.factory.ts"],
+  "migrations": ["server/migrations/**/*.ts"],
+  "seeds": ["server/seeds/**/*.seed.ts"],
+  "subscribers": ["server/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "server/models",
+    "migrationsDir": "server/migrations",
+    "subscribersDir": "server/subscriber"
+  }
+}
